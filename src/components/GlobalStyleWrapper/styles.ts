@@ -10,4 +10,12 @@ export default css`
       --foreground: #fff;
     }
   }
+
+  body {
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--foreground);
+    background: var(--background);
+    -webkit-font-smoothing: antialiased;
+  }
 `;
