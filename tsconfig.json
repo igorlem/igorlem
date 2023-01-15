@@ -2,12 +2,15 @@
   "compilerOptions": {
     "strict": true,
     "outDir": "./dist",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "noImplicitAny": true,
     "module": "es6",
     "target": "es5",
     "allowJs": false,
+    "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "Node"
+    "moduleResolution": "Node",
+    "sourceMap": true,
+    "jsxImportSource": "@emotion/react"
   }
 }
