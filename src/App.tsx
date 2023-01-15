@@ -1,5 +1,4 @@
-import '../i18n/config';
-
+import './i18n/config.ts';
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Main, Error } from './screens';
