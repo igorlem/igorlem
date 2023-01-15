@@ -6,14 +6,15 @@ const Intro: React.FC = () => {
 
   return (
     <section>
-      <h1>{t('section-title')}</h1>
-      <h2>{t('work-title')}</h2>
+      <h2>{t('section-title')}</h2>
+      <h3>{t('work-title')}</h3>
       <p>
         {t('work-description.p1')}
         {t('work-description.p2')}
         {t('work-description.p3')}
         {t('work-description.p4')}
       </p>
+      <button>{t('button-label')}</button>
     </section>
   );
 };
