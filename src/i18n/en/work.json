@@ -7,5 +7,17 @@
     "p3": "Boring metadata management has given way for the most pleasant experience a customer can get using this class of applications.",
     "p4": "Under my reign, iMusician has successfully switched to SaaS model providing seamless integration of tiered subscriptions and increasing the conversion numbers from the very launch."
   },
+  "stories": {
+    "label-1": "Product icons",
+    "label-2": "Dashboard",
+    "label-3": "Account & Subscription",
+    "label-4": "Label 4",
+    "label-5": "Label 5",
+    "label-6": "Label 6",
+    "label-7": "Label 7",
+    "label-8": "Label 8",
+    "label-9": "Label 9",
+    "label-10": "Label 10"
+  },
   "button-label": "Next: Focus"
 }
