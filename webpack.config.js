@@ -24,6 +24,10 @@ module.exports = {
           fullySpecified: false,
         },
       },
+      {
+        test: /\.?(svg|png)$/,
+        type: 'asset/resource',
+      },
     ],
   },
   plugins: [

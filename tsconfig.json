@@ -12,5 +12,6 @@
     "moduleResolution": "Node",
     "sourceMap": true,
     "jsxImportSource": "@emotion/react"
-  }
+  },
+  "include": ["./src", "index.d.ts"]
 }
