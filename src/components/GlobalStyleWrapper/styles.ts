@@ -57,7 +57,7 @@ export default css`
     font-family: 'Helvetica Now Var';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px;
     text-transform: uppercase;
     color: var(--foreground-1);
