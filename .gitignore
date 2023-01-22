@@ -9,5 +9,8 @@ node_modules/
 # Build location
 dist
 
+# Editor configs
+.vscode
+
 # DS
 .DS_Store
