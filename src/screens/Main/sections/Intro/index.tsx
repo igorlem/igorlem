@@ -27,11 +27,11 @@ const variantsChildren = {
 };
 
 const Intro: React.FC = () => {
-  const { t } = useTranslation('intro');
+  const { t } = useTranslation();
 
   return (
     <>
-      <Title>{t('title')}</Title>
+      <Title>{t('intro.title')}</Title>
 
       <motion.section
         css={sectionStyle}
@@ -40,15 +40,15 @@ const Intro: React.FC = () => {
         animate="show"
       >
         <motion.h1 css={titleStyle} variants={variantsChildren}>
-          {t('title')}
+          {t('intro.title')}
         </motion.h1>
 
         <motion.p css={textStyle} variants={variantsChildren}>
-          {t('text')}
+          {t('intro.lead')}
         </motion.p>
 
         <motion.button css={buttonStyle} variants={variantsChildren}>
-          {t('button-label')}
+          {t('intro.next-button')}
         </motion.button>
       </motion.section>
     </>

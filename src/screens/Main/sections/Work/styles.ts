@@ -39,7 +39,7 @@ export const titleStyle = css`
   margin: 0;
 `;
 
-export const workTitleStyle = css`
+export const positionStyle = css`
   font-family: 'Univers Next Pro';
   font-weight: 400;
   font-size: 36px;
