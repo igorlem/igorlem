@@ -13,6 +13,13 @@ module.exports = {
     // add ts and tsx as primary website code
     // add rest for default (e.g. node_modules)
     extensions: ['.ts', '.tsx', '...'],
+    // enable absolute imports
+    alias: {
+      components: path.resolve(__dirname, './src/components'),
+      screens: path.resolve(__dirname, './src/screens'),
+      assets: path.resolve(__dirname, './src/assets'),
+      i18n: path.resolve(__dirname, './src/i18n'),
+    },
   },
   module: {
     rules: [

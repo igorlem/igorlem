@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": "./src",
     "strict": true,
     "allowJs": false,
     "sourceMap": true,
@@ -19,5 +19,5 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
   },
-  "include": ["src", "index.d.ts"]
+  "include": ["./src", "./index.d.ts"]
 }
