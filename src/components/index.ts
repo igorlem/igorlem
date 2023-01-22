@@ -1,4 +1,4 @@
 import GlobalStyleWrapper from './GlobalStyleWrapper';
-import StoriesPlayer from './StoriesPlayer';
+import StoryPlayer from './StoryPlayer';
 
-export { GlobalStyleWrapper, StoriesPlayer };
+export { GlobalStyleWrapper, StoryPlayer };

@@ -28,7 +28,7 @@ const fadeVariants = {
 const moveVariants = {
   hide: { x: '0%' },
   show: {
-    x: '-20%',
+    x: '-100%',
     transition: { delay: 0.5, duration: 20, ease: 'linear' },
   },
 };
