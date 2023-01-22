@@ -2,12 +2,7 @@ import React from 'react';
 import { Title } from 'react-head';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import {
-  buttonStyle,
-  sectionStyle,
-  textStyle,
-  titleStyle,
-} from '../Intro/styles';
+import { buttonStyle, sectionStyle, textStyle, titleStyle } from './styles';
 
 const variantsParent = {
   hidden: { opacity: 0 },

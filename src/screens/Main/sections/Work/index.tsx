@@ -9,9 +9,9 @@ import {
   workDescriptionStyle,
   rightColumnStyle,
 } from './styles';
-import { StoriesPlayer } from '../../../../components';
-import testImage from '../../../../assets/testImage.svg';
-import testImage2 from '../../../../assets/testImage2.png';
+import { StoriesPlayer } from 'components';
+import testImage from 'assets/testImage.svg';
+import testImage2 from 'assets/testImage2.png';
 
 const Work: React.FC = () => {
   const { t } = useTranslation('work');
