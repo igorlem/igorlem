@@ -1,17 +1,23 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "strict": true,
+    "allowJs": false,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "target": "es5",
+    "noEmit": true,
     "outDir": "./dist",
     "jsx": "react-jsx",
-    "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
-    "allowJs": false,
+    "jsxImportSource": "@emotion/react",
+    "moduleResolution": "node",
+    "isolatedModules": true,
     "resolveJsonModule": true,
+    "noImplicitAny": true,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "Node",
-    "sourceMap": true,
-    "jsxImportSource": "@emotion/react"
+    "esModuleInterop": true
   },
-  "include": ["./src", "index.d.ts"]
+  "include": ["src", "index.d.ts"]
 }
