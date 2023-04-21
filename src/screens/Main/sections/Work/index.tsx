@@ -10,17 +10,15 @@ import {
   rightColumnStyle,
 } from './styles';
 import { StoryPlayer } from 'components';
-import workImage1 from 'assets/work/1.svg';
-import workImage2 from 'assets/work/2.png';
-import workImage3 from 'assets/work/3.png';
+import testImage from 'assets/work/testImage.svg';
 
 const Work: React.FC = () => {
   const { t } = useTranslation();
 
   const workStories = [
-    { n: 1, label: t('work.story.1'), image: workImage1 },
-    { n: 2, label: t('work.story.2'), image: workImage2 },
-    { n: 3, label: t('work.story.3'), image: workImage3 },
+    { n: 1, label: t('work.story.1'), image: testImage },
+    { n: 2, label: t('work.story.2'), image: testImage },
+    { n: 3, label: t('work.story.3'), image: testImage },
   ];
 
   return (
