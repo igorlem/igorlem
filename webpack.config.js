@@ -43,6 +43,7 @@ module.exports = {
     }),
     new FaviconsWebpackPlugin({
       logo: path.resolve(__dirname, 'src', 'assets', 'logo.svg'),
+      mode: 'light',
     }),
   ],
 };

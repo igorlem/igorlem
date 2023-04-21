@@ -1,5 +1,4 @@
 import React from 'react';
-import { HeadProvider } from 'react-head';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Main } from 'screens';
 import { GlobalStyleWrapper } from 'components';
@@ -13,11 +12,9 @@ const router = createBrowserRouter([
 ]);
 
 const App: React.FC = () => (
-  <HeadProvider>
-    <GlobalStyleWrapper>
-      <RouterProvider router={router} />
-    </GlobalStyleWrapper>
-  </HeadProvider>
+  <GlobalStyleWrapper>
+    <RouterProvider router={router} />
+  </GlobalStyleWrapper>
 );
 
 export default App;

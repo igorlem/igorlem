@@ -1,23 +1,24 @@
 {
   "name": "igorlem",
   "description": "personal website",
+  "homepage": "igorlem.github.io/igorlem",
   "private": "true",
   "scripts": {
-    "test": "",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "build": "rm -rf ./dist && webpack --mode production"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
-    "framer-motion": "^8.4.3",
     "i18next": "^22.4.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-head": "^3.4.2",
     "react-i18next": "^12.1.4",
     "react-router-dom": "^6.6.2"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "@babel/core": "^7.20.12",
     "@babel/plugin-transform-typescript": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
