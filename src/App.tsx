@@ -1,7 +1,7 @@
 import React from 'react';
 import { HeadProvider } from 'react-head';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Main, Error } from 'screens';
+import { Main } from 'screens';
 import { GlobalStyleWrapper } from 'components';
 import 'i18n/config';
 
@@ -9,7 +9,6 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Main />,
-    errorElement: <Error />,
   },
 ]);
 

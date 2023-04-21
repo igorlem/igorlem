@@ -1,71 +1,43 @@
 import { css } from '@emotion/react';
+import fontReg from 'assets/fonts/reg.woff2';
+import fontBold from 'assets/fonts/bold.woff2';
 
 export default css`
+  @font-face {
+    font-family: 'Uni';
+    font-style: normal;
+    font-weight: 700;
+    src: url(${fontBold}) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Uni';
+    font-style: normal;
+    font-weight: normal;
+    src: url(${fontReg}) format('woff2');
+  }
+
   :root {
-    --foreground-1: #111111;
-    --foreground-2: #111111cc; // 80%
-    --foreground-3: #1111111a; // 10%
-    --background-1: #ffffff;
-    --background-2: #fafafa;
+    --foreground-1: rgba(0, 0, 0, 0.9);
+    --foreground-2: rgba(0, 0, 0, 0.6);
+    --background: #f8f8f8;
 
     @media (prefers-color-scheme: dark) {
-      --foreground-1: #ffffff;
-      --foreground-2: #ffffffcc; // 80%
-      --foreground-3: #ffffff1a; // 10%
-      --background-1: #111111;
-      --background-2: #1f1f1f;
+      --foreground-1: rgba(255, 255, 255, 0.9);
+      --foreground-2: rgba(255, 255, 255, 0.6);
+      --background: #191919;
     }
   }
 
   * {
+    margin: 0;
     box-sizing: border-box;
   }
 
   html {
-    background: var(--background-1);
+    background: var(--background);
     color: var(--foreground-1);
-  }
-
-  body {
-    margin: 0;
+    font-family: 'Uni', sans-serif;
     -webkit-font-smoothing: antialiased;
-  }
-
-  h1,
-  h2,
-  h3 {
-    margin: 0;
-  }
-
-  p {
-    color: var(--foreground-2);
-    margin: 0;
-  }
-
-  button {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    padding: 0px 16px;
-    height: 40px;
-    background: transparent;
-    border: 0;
-    border-radius: 20px;
-    box-shadow: inset 0 0 0 2px var(--foreground-1);
-    cursor: pointer;
-    // text props
-    font-family: 'Helvetica Now Var';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: var(--foreground-1);
-    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
-
-    :hover {
-      background-color: var(--foreground-1);
-      color: var(--background-1);
-    }
   }
 `;

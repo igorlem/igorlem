@@ -1,23 +1,8 @@
 {
-  "intro": {
-    "title": "Igor Lemeshkin",
-    "lead": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.",
-    "next-button": "Current work"
+  "title": "Igor Lemeshkin",
+  "lead": {
+    "1": "UX designer",
+    "2": "Experiencing and crafting human interfaces"
   },
-  "work": {
-    "title": "Current work",
-    "position": "iMusician, Principal Designer",
-    "description": {
-      "p1": "Leading internal design team & managing multiple projects that shape the future of the platform.",
-      "p2": "The iMusician brand becomes stronger as innovative products are being designed and launched within its ecosystem.",
-      "p3": "Boring metadata management has given way for the most pleasant experience a customer can get using this class of applications.",
-      "p4": "Under my reign, iMusician has successfully switched to SaaS model providing seamless integration of tiered subscriptions and increasing the conversion numbers from the very launch."
-    },
-    "story": {
-      "1": "Product icons",
-      "2": "Dashboard",
-      "3": "Account & Subscription"
-    },
-    "next-button": "Next: Focus"
-  }
+  "dev-notice": "The website is in development"
 }

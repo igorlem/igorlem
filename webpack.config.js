@@ -15,10 +15,10 @@ module.exports = {
     extensions: ['.ts', '.tsx', '...'],
     // enable absolute imports
     alias: {
-      components: path.resolve(__dirname, './src/components'),
-      screens: path.resolve(__dirname, './src/screens'),
       assets: path.resolve(__dirname, './src/assets'),
+      components: path.resolve(__dirname, './src/components'),
       i18n: path.resolve(__dirname, './src/i18n'),
+      screens: path.resolve(__dirname, './src/screens'),
     },
   },
   module: {
@@ -32,7 +32,7 @@ module.exports = {
         },
       },
       {
-        test: /\.?(svg|png)$/,
+        test: /\.?(svg|png|woff2)$/,
         type: 'asset/resource',
       },
     ],
