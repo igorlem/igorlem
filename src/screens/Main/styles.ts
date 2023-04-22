@@ -17,15 +17,15 @@ export const topStyle = css`
 `;
 
 export const titleStyle = css`
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 32px;
+  line-height: 40px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 `;
 
 export const subtitleStyle = css`
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 32px;
   letter-spacing: 0.015em;
   text-transform: lowercase;
   color: var(--foreground-2);
@@ -33,8 +33,8 @@ export const subtitleStyle = css`
 `;
 
 export const developmentNoticeStyle = css`
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.015em;
   text-transform: lowercase;
 `;
