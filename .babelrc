@@ -4,8 +4,12 @@
     "@babel/preset-typescript",
     [
       "@babel/preset-react",
-      // makes the whole thing work
-      { "runtime": "automatic", "importSource": "@emotion/react" }
+      {
+        // enables the importSource
+        "runtime": "automatic",
+        // makes the css thing work
+        "importSource": "@emotion/react"
+      }
     ]
   ],
   "plugins": ["@emotion"]

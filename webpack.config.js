@@ -17,8 +17,7 @@ module.exports = {
     alias: {
       assets: path.resolve(__dirname, './src/assets'),
       components: path.resolve(__dirname, './src/components'),
-      i18n: path.resolve(__dirname, './src/i18n'),
-      screens: path.resolve(__dirname, './src/screens'),
+      routes: path.resolve(__dirname, './src/routes'),
     },
   },
   module: {
@@ -32,7 +31,12 @@ module.exports = {
         },
       },
       {
-        test: /\.?(svg|png|woff2)$/,
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: ['@svgr/webpack'],
+      },
+      {
+        test: /\.?(png|woff2)$/,
         type: 'asset/resource',
       },
     ],
@@ -42,8 +46,24 @@ module.exports = {
       template: path.join(__dirname, 'src', 'index.html'),
     }),
     new FaviconsWebpackPlugin({
-      logo: path.resolve(__dirname, 'src', 'assets', 'logo.svg'),
+      logo: path.resolve(__dirname, 'src', 'assets', 'favicon.png'),
       mode: 'light',
     }),
   ],
+  devServer: {
+    historyApiFallback: true,
+    port: 3000,
+  },
 };
+
+// new OpengraphHtmlWebpackPlugin([
+//   { property: 'og:type', content: 'website' },
+//   { property: 'og:url', content: 'https://igorlem.design' },
+//   { property: 'og:title', content: 'igor lemeshkin' },
+//   {
+//     property: 'og:description',
+//     content: 'a designer, visual creator and engineer',
+//   },
+//   // TODO: add og:image
+//   { property: 'og:image', content: '' },
+// ]),

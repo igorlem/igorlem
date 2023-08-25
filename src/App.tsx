@@ -1,20 +1,16 @@
-import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Main } from 'screens';
-import { GlobalStyleWrapper } from 'components';
-import 'i18n/config';
+import GlobalStyleWrapper from 'components/GlobalStyleWrapper';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Main from 'routes/Main';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Main />,
-  },
-]);
-
-const App: React.FC = () => (
-  <GlobalStyleWrapper>
-    <RouterProvider router={router} />
-  </GlobalStyleWrapper>
-);
+const App = () => {
+  return (
+    <GlobalStyleWrapper>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="*" element={<Navigate to="/" replace={true} />} />
+      </Routes>
+    </GlobalStyleWrapper>
+  );
+};
 
 export default App;
