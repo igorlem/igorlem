@@ -1,21 +1,29 @@
+import AnimatedLeadSection from 'components/AnimatedLeadSection';
 import HeaderSection from 'components/HeaderSection';
+import TextColumn from 'components/TextColumn';
 import { mainStyle } from './styles';
 
-const leadLines = ['I am', 'designer,'];
+const blocks = [
+  [
+    'I create',
+    'visual languages',
+    'design systems',
+    'and',
+    'exciting prototypes.',
+  ],
+  ['I work on', 'full-scale projects', 'striving for', 'utter perfection.'],
+  ['Packing', 'innovative function', 'in sexy form.'],
+  ['Applying', 'traditional', 'and unorthodox', 'approaches.'],
+  ['Making it', 'for joy.'],
+];
 
 const Main: React.FC = () => {
   return (
     <main css={mainStyle}>
       {/* <Cursor /> */}
-
-      <HeaderSection lines={leadLines} />
-
-      {/* {textBlocks.map((block, i) => (
-        <TextSection key={`text-block-i`} lines={block.lines} />
-      ))} */}
-
-      {/* Temporary solution */}
-      <div style={{ height: '100000px' }}></div>
+      <HeaderSection />
+      <AnimatedLeadSection lines={['I am', 'designer.']} />
+      <TextColumn blocks={blocks} />
     </main>
   );
 };

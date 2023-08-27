@@ -1,47 +1,37 @@
 import Logotype from 'assets/logotype.svg';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import { headerStyle, logoWrapperStyle } from './styles';
+import { headerStyle } from './styles';
 
-type Props = {
-  lines: string[];
-};
-
-const springConfig = {};
-
-const HeaderSection: React.FC<Props> = ({ lines }) => {
+const HeaderSection: React.FC = () => {
   const targetRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
-    offset: ['start start', 'end start'],
+    offset: ['start start', 'center start'],
   });
 
-  const logotypeScale = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
+  const scaleAnimated = useSpring(scale, { damping: 10 });
   const logotypeBlur = useTransform(
     scrollYProgress,
-    [0.2, 0.5],
-    ['blur(0px)', 'blur(200px)']
+    [0.3, 1],
+    ['blur(0px)', 'blur(100px)']
   );
-  const logotypeOpacity = useTransform(scrollYProgress, [0.2, 0.4], [1, 0]);
+  const logotypeOpacity = useTransform(scrollYProgress, [0.2, 1], [1, 0]);
 
   return (
-    <div ref={targetRef} css={headerStyle} id="header">
-      <motion.div
-        css={logoWrapperStyle}
-        style={{
-          scale: logotypeScale,
-          filter: logotypeBlur,
-          opacity: logotypeOpacity,
-        }}
-      >
-        <Logotype />
-      </motion.div>
-
-      {lines.map((item, i) => (
-        <span key={`line-${i}`}>{item}</span>
-      ))}
-    </div>
+    <motion.div
+      ref={targetRef}
+      css={headerStyle}
+      style={{
+        scale: scaleAnimated,
+        opacity: logotypeOpacity,
+        filter: logotypeBlur,
+      }}
+    >
+      <Logotype />
+    </motion.div>
   );
 };
 

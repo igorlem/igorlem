@@ -6,9 +6,6 @@ export const textSectionStyle = css`
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 88px;
-  min-height: 100vh;
-  line-height: 116px;
 `;
 
 export const lineStyle = css``;
